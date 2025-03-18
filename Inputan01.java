@@ -6,25 +6,23 @@ public class Inputan01 {
 
         Scanner saya = new Scanner(System.in);
 
-        System.out.print("Masukin  nilai tugas = ");
-        int a = saya.nextInt();
-        saya.nextLine(); // Consume the newline character
+        System.out.print("Masukin nama     = ");
+        String a = saya.nextLine();
         // bs masukin huruf
 
-      //   System.out.println("Nama Anda     = " + a);
+        System.out.println("Nama Anda     = " + a);
 
-        System.out.print("Masukin nilai uts = ");
+        System.out.print("Masukin nilai b = ");
         int b = saya.nextInt();
         saya.nextLine(); // Consume the newline character
 
-        System.out.print("Masukin nilai uas = ");
-        int c = saya.nextInt();
+        System.out.print("Masukin nilai c = ");
+        double c = saya.nextDouble();
         saya.nextLine(); // Consume the newline character
 
-        int rata = (a*20/100)+(b*30/100)+(c*50/100);
-        System.out.print("Rata-rata = "+ rata);
-        
-        
+        System.out.println("Nilai b     = " + b);
+
+        System.out.println("Nilai c     = " + c);
         saya.close();
     }
 }
