@@ -1,3 +1,2 @@
- System.out.println("Nilai b     = " + b);
 
-        System.out.println("Nilai c     = " + c);
+    public static void main(String[] args) 
