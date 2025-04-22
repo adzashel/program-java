@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class TarifParkirMobil {
@@ -17,24 +18,22 @@ public class TarifParkirMobil {
 
    public static long fee(int time) {
       // conditional statement depend on how long user been parkin'
-      if( time <= 4) {
+      if (time <= 4) {
          int first4Hours = 6000;
-         int parkFee = time * first4Hours ;
+         int parkFee = time * first4Hours;
          return parkFee;
-      }else if ( time <= 10) {
+      } else if (time <= 10) {
          return 35000;
-      }
-      else if( time <= 15) {
+      } else if (time <= 15) {
          return 55000;
-      }
-      else if ( time <= 24) {
+      } else if (time <= 24) {
          return 80000;
-      }else {
+      } else {
          int firstDayFee = 80000;
-         int nextDay = (int)Math.ceil((double) (time - 24) / 24) ; // get hours after one day parking
+         int nextDay = (int) Math.ceil((double) (time - 24) / 24); // get hours after one day parking
          int feePerDay = 60000;
          int nextDayFee = nextDay * feePerDay;
          return nextDayFee + firstDayFee;
-      } 
+      }
    }
 }
