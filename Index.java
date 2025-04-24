@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class index {
+public class Index {
     public static void main(String[] args) {
         
         Scanner sample = new Scanner(System.in);
